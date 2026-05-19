@@ -1,0 +1,38 @@
+npx create-next-app@latest klasörismi --typescript --tailwind --eslint
+cd klasörismi-
+npm install @supabase/supabase-js @supabase/ssr
+
+.env.local oluşturuldu ve api anahtarları eklendi.
+
+SSR VE CSR NEDİR?
+
+SSR (Server-Side Rendering): Garson masanıza yemeği mutfakta (sunucuda) tam kıvamında pişirilmiş, süslenmiş ve yemeye hazır bir tabak olarak getirir.
+Eski mantık CSR: Bir restorana gittiğinizi düşünün. Garson masanıza yemeği değil; tüp, tava ve çiğ malzemeleri getiriyor. Yemeği masada (sizin tarayıcınızda) pişirmeniz gerekiyor.
+
+Client Nedir?
+
+Yazılım dünyasında "Client" (İstemci), kullanıcının cihazı demektir.
+Yani senin web sitene giren kişinin cep telefonu veya bilgisayarındaki tarayıcısıdır (Chrome, Safari vb.).
+Ekranda tıklanan bir buton varsa bu kullanıcının bilgisayarındaki bir olaydır, tarayıcıda gerçekleşir.
+Bu tür bileşenlere CLIENT COMPONENT denir. Dosyanın en üstünde 'use client' yazılır.
+
+İşte burada Supabase devreye giriyor:
+Supabase ile iletişim kurabilmek için bir "aracıya" veya "köprüye" ihtiyacımız var.
+Biz bu köprüye Supabase Client diyoruz. 2 tane ihtiyacımız var client.ts ve server.
+Amaçları her dosyanın en altında mevcut!!!
+
+utils/supabase açtık ve içine üç dosya koyduk.
+.env dizinine proxy.ts açtık.
+
+npm install lucide-react 
+npx shadcn@latest init  --> components.json geldi
+npx shadcn@latest add input
+npx shadcn@latest add card
+npx shadcn@latest add label
+npx shadcn@latest add button
+npx shadcn@latest add dialog
+npx shadcn@latest add alert
+npx shadcn@latest add avatar
+npx shadcn@latest add badge
+npx shadcn@latest add popover
+npx shadcn@latest add select
