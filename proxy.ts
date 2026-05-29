@@ -8,7 +8,7 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Aşağıdaki yollar haricindeki tüm sayfalarda proxy çalışır:
+     * Aşağıdaki yollar haricindeki tüm sayfalarda proxy/middleware çalışır:
      * - _next/static (statik dosyalar)
      * - _next/image (görsel optimizasyonları)
      * - favicon.ico (favicon)
